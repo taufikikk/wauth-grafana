@@ -12,11 +12,11 @@ app.get('/wauth', function(req, res) {
 });
 
 app.post('/wauth', function(req, res) {
-  console.log(req.body);
   let msg = req.body
   let groups = msg.group.split(',')
-  console.log(groups);
-  let generateToken = jwt.sign(req.body, 'nyan');
+  req.body.group = groups
+  console.log(msg);
+  let generateToken = jwt.sign(msg, 'nyan');
   res.send(JSON.stringify(generateToken))
 });
 
