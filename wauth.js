@@ -17,7 +17,14 @@ app.post('/wauth', function(req, res) {
   req.body.group = groups
   console.log(msg);
   let generateToken = jwt.sign(msg, 'nyan');
-  res.send(JSON.stringify(generateToken))
+  res.send(`<center><blockquote style="background-color:Lavender;">Token: ${generateToken}</blockquote></center>`)
+});
+
+app.post('/wauth-decode', function(req, res) {
+  let msg = req.body.auth
+  console.log(msg);
+  let decoded = jwt.verify(msg, 'nyan');
+  res.send(`<center><blockquote style="background-color:Lavender;">${JSON.stringify(decoded)}</blockquote></center>`)
 });
 
 app.listen(port, () => {

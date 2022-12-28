@@ -16,6 +16,12 @@
         <div class="w3-display-topleft w3-padding-large w3-xlarge">
             MDW
         </div>
+        <div class="w3-display-topright w3-padding-small w3-small">
+            <form action="/wauth-decode" method="POST">
+                <input type="text" id="auth" name="auth" placeholder="WAuth Token ...">
+                <input class="w3-button w3-white w3-border w3-hover-black w3-tiny" type="submit" value="Decoded">
+            </form>
+        </div>
         <div class="w3-display-middle">
             <h1 class="w3-jumbo w3-animate-top w3-center">WAuth</h1>
             <hr class="w3-border-grey" style="margin:auto;width:40%">
