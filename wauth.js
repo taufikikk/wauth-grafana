@@ -1,7 +1,7 @@
 const express = require('express'),
       bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
+const port = 3010;
 const jwt = require('jsonwebtoken')
 
 app.use(express.static("public"));
@@ -21,5 +21,5 @@ app.post('/wauth', function(req, res) {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`App Wauth listening on port ${port}`)
 })
