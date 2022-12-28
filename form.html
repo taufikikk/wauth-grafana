@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="/bg.css">
+</head>
+
+<body>
+
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge">
+            MDW
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top w3-center">WAuth</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+            <p class="w3-large w3-center">Grafana Whatsapp Auth Generator</p>
+
+        <div class="container">
+            <form action="/wauth" method="POST">
+            <div class="row">
+              <div class="col-25">
+                <label for="org">Choose a Organization:</label>
+              </div>
+              <div class="col-75">
+                <select id="org" name="org">
+                  <option value="1">Main Org.</option>
+                  <option value="5">Development</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="group">Group Name:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="group" name="group" placeholder="Group Name ...">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="w3-display-bottomleft w3-padding-large">
+            Powered by MDW
+        </div>
+    </div>
+
+</body>
+
+</html>
